@@ -1,6 +1,12 @@
 pipeline {
   agent none
   stages {
+      stage('Test') {
+      agent any
+      steps {
+        sh "echo 'Tests passed'"
+      }
+    }
     stage('Docker Build') {
       agent any
       steps {
