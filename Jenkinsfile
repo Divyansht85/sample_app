@@ -4,7 +4,7 @@ pipeline {
       stage('Test') {
       agent any
       steps {
-        sh "echo 'Testing 5'"
+        sh "echo 'Testing 6'"
       }
     }
     stage('Docker Build') {
